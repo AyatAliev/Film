@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.geektech.film.R;
 
+
 public class ViewHolder extends RecyclerView.ViewHolder {
 
    private TextView tv_result;
@@ -18,6 +19,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void onbind(String s){
-        tv_result.setText("");
+        tv_result.setText(s);
     }
 }

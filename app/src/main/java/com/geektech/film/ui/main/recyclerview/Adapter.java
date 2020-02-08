@@ -11,16 +11,18 @@ import com.geektech.film.R;
 
 import java.util.ArrayList;
 
+
 public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     private ArrayList<String> arrayList;
 
     public Adapter() {
         arrayList = new ArrayList<>();
+
     }
 
-    public void update(ArrayList<String> values){
-        arrayList = values;
+    public void update(String values){
+        arrayList.add(values);
     }
 
     @NonNull
